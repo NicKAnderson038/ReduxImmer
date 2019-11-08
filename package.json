@@ -1,0 +1,33 @@
+{
+  "name": "reduximmer",
+  "version": "1.0.0",
+  "description": "testing out Immer with redux",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@reach/router": "1.1.1",
+    "axios": "0.18.0",
+    "bulma": "0.7.1",
+    "immer": "5.0.0",
+    "object-path-immutable": "4.0.2",
+    "reach": "1.0.1",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-loads": "5.0.0",
+    "react-redux": "5.0.7",
+    "react-scripts": "1.1.4",
+    "reakit": "0.14.5",
+    "rebul": "1.0.2",
+    "redux": "4.0.0",
+    "redux-localstorage": "0.4.1",
+    "redux-thunk": "2.3.0",
+    "store": "2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

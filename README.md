@@ -1,2 +1,0 @@
-# ReduxImmer
-Created with CodeSandbox
