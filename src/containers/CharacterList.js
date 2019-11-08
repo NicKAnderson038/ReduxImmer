@@ -1,4 +1,5 @@
 import React, { useEffect, Fragment } from "react";
+import { CircularProgress } from "@material-ui/core";
 import { Heading, Paragraph } from "reakit";
 import { connect } from "react-redux";
 
@@ -16,7 +17,7 @@ const CharacterList = props => {
     <Fragment>
       <Heading>Rick & Morty Characters</Heading>
       <hr />
-      {isLoading && !characters && <p>Loading...</p>}
+      {isLoading && !characters && <CircularProgress />}
       {characters && (
         <Fragment>
           {characters.results.length === 0 && (

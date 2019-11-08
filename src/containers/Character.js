@@ -1,4 +1,5 @@
 import React, { useEffect, Fragment } from "react";
+import { CircularProgress } from "@material-ui/core";
 import { connect } from "react-redux";
 import { Link } from "@reach/router";
 import { Base, Flex, Heading, Image, Paragraph } from "reakit";
@@ -15,7 +16,11 @@ const Character = props => {
   return (
     <Fragment>
       <Link to="/">Back</Link>
-      {isLoading && !character && <Heading as="h3">Loading...</Heading>}
+      {isLoading && !character && (
+        <Heading as="h3">
+          <CircularProgress />
+        </Heading>
+      )}
       {character && (
         <Fragment>
           <Heading>{character.name}</Heading>
