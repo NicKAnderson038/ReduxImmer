@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react";
+import React, { useEffect, Fragment, Suspense } from "react";
 import { CircularProgress } from "@material-ui/core";
 import { connect } from "react-redux";
 import { Link } from "@reach/router";

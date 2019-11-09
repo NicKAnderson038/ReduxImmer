@@ -1,4 +1,5 @@
 import axios from "axios";
+import useFetch from "fetch-suspense";
 
 export const FETCH_CHARACTER_REQUEST = "FETCH_CHARACTER_REQUEST";
 export const FETCH_CHARACTER_SUCCESS = "FETCH_CHARACTER_SUCCESS";
@@ -10,6 +11,7 @@ export const fetchCharacter = id => async dispatch => {
     const response = await axios.get(
       `https://rickandmortyapi.com/api/character/${id}`
     );
+
     return dispatch({
       type: FETCH_CHARACTER_SUCCESS,
       data: response.data,
