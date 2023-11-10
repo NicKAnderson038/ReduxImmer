@@ -7,7 +7,7 @@
   "dependencies": {
     "@material-ui/core": "4.6.0",
     "@reach/router": "1.2.1",
-    "axios": "0.19.0",
+    "axios": "1.6.0",
     "bulma": "0.8.0",
     "immer": "5.0.0",
     "reach": "1.0.1",
